@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <title>JS</title>
+  <style>
+    body{
+      font-family: 'Poppins';
+      background-color: purple;
+      color: white;
+    }
+    .card{
+      border: 5px solid white;
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h2>Task 1</h2>
+  <h4>Sum of array is: <span id="demo"></span></h4>
+
+
+  <h2>Task 2</h2>
+    First number: <input id="first" type="text" name="first" ><br>
+    Second number: <input id="second" type="text" name="second" ><br><br>
+    <button type="submit" onclick="check('plus')" id="operation">Add</button>
+    <button type="submit" onclick="check('minus')" id="operation">Subtract</button>
+    <button type="submit" onclick="check('multiply')" id="operation">Multiply</button>
+    <button type="submit" onclick="check('divide')" id="operation">Divide</button>
+  <h6>Answer is <span id="ans"></span></h6>
+
+
+<h2>Task 3</h2>
+  <h6>Put in data like this-> 1 3 4 2 12 6</h6>
+  Array to sort: <input id="array" type="text" name="array" ><br>
+
+  <button type="submit" id="demo2" onclick="sortit()" name="sort">Sort</button><br>
+  <h6 id="sorted"></h6><br>
+
+
+<h2>Task 4</h2>
+  <section class="vh-100 gradient-custom mb-4">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="pb-md-0">Registration</h3>
+              <h4 class="mb-4 pb-2 pb-md-0">Fill in the data below</h4>
+              
+                <div class="row">
+                  <div class="col-md-12 mb-4">
+  
+                    <div class="form-outline">
+                      <input type="text" id="fullName" class="form-control form-control-lg" placeholder="Full Name"/>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-12 mb-4">
+  
+                    <div class="form-outline">
+                      <input type="text" id="email" class="form-control form-control-lg" placeholder="Email Address"/>
+                    </div>
+  
+                  </div>
+                </div>
+                <div class="col-md-12 mb-4 pb-2">
+  
+                  <div class="form-outline">
+                    <input type="password" id="password" class="form-control form-control-lg" placeholder="Password"/>
+                  </div>
+
+                </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      I confirm that all the data is correct
+                    </label>
+                  </div>
+                  
+                  <div class="mt-4 pt-2">
+                    <button class="btn btn-secondary btn-lg" type="submit" value="Submit" onclick="validator()">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <h2>Task 5</h2>
+<section class="mt-5">
+  Bill: <input id="bill" type="text" name="bill" ><br>
+  People: <input id="people" type="text" name="people" ><br><br>
+  <button type="submit" onclick="tipCalc('outstanding')" id="service">Outstanding</button>
+  <button type="submit" onclick="tipCalc('good')" id="service">Good</button>
+  <button type="submit" onclick="tipCalc('ok')" id="service">Okay</button>
+  <button type="submit" onclick="tipCalc('bad')" id="service">Bad</button>
+  <button type="submit" onclick="tipCalc('terrible')" id="service">Terrible</button>
+  <h6>Tip is: <span id="tip"></span></h6>
+</section>
+  
+  
+  <script src="javaScript.js"></script>
+</body>
+</html>
